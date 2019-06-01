@@ -2,6 +2,7 @@
 
 import requests, json
 
+#currently has to be the superuser to allow Global Variables to be updated
 auth=('user@domain.com', 'PASSWORD')
 url = "http://192.168.1.1/api/globalVariables/"
 statusfile = "status.txt"
