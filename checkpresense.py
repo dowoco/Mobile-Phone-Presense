@@ -3,7 +3,6 @@
 import os,time
 phonesfile = "/home/pi/family"
 statusfile = "/home/pi/status.txt"
-fibaro = "/home/pi/fibaro.py"
 presenseStatus = {}
 
 def networkping(host):
@@ -58,5 +57,3 @@ for name, address in phonesList.items():
 #print presenseStatus
 
 writeStatus (statusfile,presenseStatus)
-
-os.system('python ' + fibaro)
